@@ -6,13 +6,9 @@ import InTextLink from "@/components/InTextLink";
 import IconRow from "@/components/main_page/IconRow";
 
 // Tech Icons
-import JavaIcon from "@/assets/tech_icons/java_icon.svg";
-import ReactIcon from "@/assets/tech_icons/react_icon.svg";
-import SpringIcon from "@/assets/tech_icons/spring_icon.svg";
-import PythonIcon from "@/assets/tech_icons/python_icon.svg";
-import MongoIcon from "@/assets/tech_icons/mongo_icon.svg";
-import PostgresIcon from "@/assets/tech_icons/postgres_icon.svg";
-import JSIcon from "@/assets/tech_icons/js_icon.svg";
+import CIcon from "@/assets/tech_icons/c_icon.svg";
+import LinuxIcon from "@/assets/tech_icons/linux_icon.svg";
+// 
 import useCopyDimension from "@/app/hooks/useCopyDimension";
 import BottomNavButton from "@/components/project_page/BottomNavButton";
 
@@ -50,17 +46,17 @@ export default function Home() {
       </section>
 
       {/* Tech Section */}
-      <section className="w-full h-fit flex-1 grid-margin-px relative">
+      <section className="w-full h-fit flex-1 grid-margin-px relative space-y-10">
         <h2 className="section-title">Tech Stack</h2>
+        
         <IconRow
-          icons={[SpringIcon, ReactIcon, MongoIcon, MongoIcon]}
-          subtexts={["Spring MVC", "React JS", "Mongo DB", "Mongo DB"]}
+          icons={[ LinuxIcon]}
+          subtexts={[ "Linux"]}
         />
         <IconRow
-          icons={[MongoIcon, MongoIcon]}
-          subtexts={["Spring MVC", "React JS"]}
+          icons={[CIcon]}
+          subtexts={["C"]}
         />
-
         {/* Blobs */}
         <div className="absolute bottom-0 left-0 w-full h-full flex flex-1 items-center justify-center -z-50">
           <Image

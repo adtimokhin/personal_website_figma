@@ -6,13 +6,11 @@ import InTextLink from "@/components/InTextLink";
 import IconRow from "@/components/main_page/IconRow";
 
 // Tech Icons
-import JavaIcon from "@/assets/tech_icons/java_icon.svg";
-import ReactIcon from "@/assets/tech_icons/react_icon.svg";
 import SpringIcon from "@/assets/tech_icons/spring_icon.svg";
-import PythonIcon from "@/assets/tech_icons/python_icon.svg";
-import MongoIcon from "@/assets/tech_icons/mongo_icon.svg";
+import FTLIcon from "@/assets/tech_icons/ftl_icon.svg";
 import PostgresIcon from "@/assets/tech_icons/postgres_icon.svg";
-import JSIcon from "@/assets/tech_icons/js_icon.svg";
+import JavaIcon from "@/assets/tech_icons/java_icon.svg";
+//
 import useCopyDimension from "@/app/hooks/useCopyDimension";
 import BottomNavButton from "@/components/project_page/BottomNavButton";
 
@@ -34,32 +32,33 @@ export default function Home() {
         <div className="w-full h-fit flex-1 lg:flex mx-auto space-y-4">
           <div className="desktop:w-1/2 w-full grid-margin-pl">
             <p>
-              A website designed for students in D&apos;Overbroeck&apos;s College Oxford
-              to schedule time when they will use communal washing machines and
-              dryers in the residence halls of the school. The system allowed to
-              select convenient time periods, create accounts. The system kept
-              log of the bookings for the school administration to analyze the
-              times machines are in use and infer if some machines are broken.
+              A website designed for students in D&apos;Overbroeck&apos;s
+              College Oxford to schedule time when they will use communal
+              washing machines and dryers in the residence halls of the school.
+              The system allowed to select convenient time periods, create
+              accounts. The system kept log of the bookings for the school
+              administration to analyze the times machines are in use and infer
+              if some machines are broken.
             </p>
           </div>
           <div className="tablet:w-1/2 w-full grid-margin-pr mx-auto flex flex-1 flex-row justify-center space-x-20 grid-gutter-pl">
-            <InTextLink text={"Project's Code"} dest={"https://github.com/adtimokhin/washingDisasterSolver"} />
+            <InTextLink
+              text={"Project's Code"}
+              dest={"https://github.com/adtimokhin/washingDisasterSolver"}
+            />
             <InTextLink text={"Outline PDF"} dest={"Nowhere"} />
           </div>
         </div>
       </section>
 
       {/* Tech Section */}
-      <section className="w-full h-fit flex-1 grid-margin-px relative">
+      <section className="w-full h-fit flex-1 grid-margin-px relative space-y-10">
         <h2 className="section-title">Tech Stack</h2>
         <IconRow
-          icons={[SpringIcon, ReactIcon, MongoIcon, MongoIcon]}
-          subtexts={["Spring MVC", "React JS", "Mongo DB", "Mongo DB"]}
+          icons={[SpringIcon, FTLIcon, PostgresIcon]}
+          subtexts={["Spring MVC", "FTL", "PostgreSQL"]}
         />
-        <IconRow
-          icons={[MongoIcon, MongoIcon]}
-          subtexts={["Spring MVC", "React JS"]}
-        />
+        <IconRow icons={[JavaIcon]} subtexts={["Java"]} />
 
         {/* Blobs */}
         <div className="absolute bottom-0 left-0 w-full h-full flex flex-1 items-center justify-center -z-50">
@@ -140,7 +139,11 @@ export default function Home() {
           arrowLeft
           dest={"/projects/sss"}
         />
-        <BottomNavButton topText={"Checkout"} bottomText={"Shell"} dest={"/projects/shell"} />
+        <BottomNavButton
+          topText={"Checkout"}
+          bottomText={"Shell"}
+          dest={"/projects/shell"}
+        />
       </section>
     </main>
   );

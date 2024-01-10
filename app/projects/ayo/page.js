@@ -6,13 +6,13 @@ import InTextLink from "@/components/InTextLink";
 import IconRow from "@/components/main_page/IconRow";
 
 // Tech Icons
-import JavaIcon from "@/assets/tech_icons/java_icon.svg";
 import ReactIcon from "@/assets/tech_icons/react_icon.svg";
-import SpringIcon from "@/assets/tech_icons/spring_icon.svg";
-import PythonIcon from "@/assets/tech_icons/python_icon.svg";
-import MongoIcon from "@/assets/tech_icons/mongo_icon.svg";
-import PostgresIcon from "@/assets/tech_icons/postgres_icon.svg";
 import JSIcon from "@/assets/tech_icons/js_icon.svg";
+import FirebaseIcon from "@/assets/tech_icons/firebase_icon.svg";
+import ExpoIcon from "@/assets/tech_icons/expo_icon.svg";
+import ReduxIcon from "@/assets/tech_icons/redux_icon.svg";
+import AWSIcon from "@/assets/tech_icons/aws_icon.svg";
+
 import useCopyDimension from "@/app/hooks/useCopyDimension";
 import BottomNavButton from "@/components/project_page/BottomNavButton";
 
@@ -51,15 +51,16 @@ export default function Home() {
       </section>
 
       {/* Tech Section */}
-      <section className="w-full h-fit flex-1 grid-margin-px relative">
+      <section className="w-full h-fit flex-1 grid-margin-px relative space-y-10">
         <h2 className="section-title">Tech Stack</h2>
+        
         <IconRow
-          icons={[SpringIcon, ReactIcon, MongoIcon, MongoIcon]}
-          subtexts={["Spring MVC", "React JS", "Mongo DB", "Mongo DB"]}
+          icons={[ReactIcon, FirebaseIcon, ExpoIcon]}
+          subtexts={["React Native", "Firebase", "Expo"]}
         />
         <IconRow
-          icons={[MongoIcon, MongoIcon]}
-          subtexts={["Spring MVC", "React JS"]}
+          icons={[JSIcon, AWSIcon, ReduxIcon]}
+          subtexts={[ "JavaScript", "AWS", "Redux"]}
         />
 
          {/* Blobs */}
