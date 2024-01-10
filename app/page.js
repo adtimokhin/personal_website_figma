@@ -240,7 +240,7 @@ export default function Home() {
             expressing your interest in having me join your project. I am
             enthusiastic about discussing any project ideas you may have,
             exploring potential collaborations, or simply staying in touch.
-            Whether you're looking to strengthen your team, brainstorm new
+            Whether you&apos;re looking to strengthen your team, brainstorm new
             project concepts, or keep up with the latest updates I share, I
             welcome any communication.
           </p>
