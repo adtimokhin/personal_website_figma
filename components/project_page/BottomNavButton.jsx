@@ -18,9 +18,9 @@ export default function BottomNavButton({
     >
       {/* TODO: Replace with an icon of an arrow */}
       {arrowLeft ? (
-        <Image src={LeftArrow} alt="Left arrow" className="self-center pr-2" height={"100%"} />
+        <Image src={LeftArrow} alt="Left arrow" className="self-center pr-1" height={"60"} />
       ) : (
-        <Image src={RightArrow} alt="Right arrow" className="self-center order-last pl-2" height={"100%"} />
+        <Image src={RightArrow} alt="Right arrow" className="self-center order-last pl-1" height={"60"} />
       )}
 
       <div>
