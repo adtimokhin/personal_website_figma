@@ -39,7 +39,7 @@ export default function Home() {
               output to the start of the file.
             </p>
           </div>
-          <div className="tablet:w-1/2 w-full grid-margin-pr mx-auto flex flex-1 flex-row justify-center space-x-20 grid-gutter-pl">
+          <div className="tablet:w-1/2 w-full grid-margin-pr mx-auto flex flex-1 flex-row justify-center tablet:space-x-20 space-x-10 grid-gutter-pl">
             <InTextLink text={"Project's Code"} dest={"Nowhere"} />
           </div>
         </div>
@@ -71,9 +71,9 @@ export default function Home() {
       {/* Accomplishments Section */}
       <section className="w-full h-fit grid-margin-px overflow-hidden">
         <h2 className="section-title">Overview</h2>
-        <div className="w-full h-fit flex-row flex justify-between items-center">
+        <div className="w-full h-fit flex">
           <div
-            className="h-fit w-1/2 space-y-[300px] grid-gutter-pr"
+            className="h-fit tablet:w-1/2 w-full space-y-[300px] grid-gutter-pr"
             id="ayo__scroll__animation-div"
           >
             <div>
@@ -103,7 +103,7 @@ export default function Home() {
             <div/>
           </div>
           <div
-            className="w-1/2 grid-gutter-pl relative"
+            className="tablet:w-1/2 w-0 grid-gutter-pl relative tablet:flex hidden"
             style={{
               height: scrollAnimationHeight,
             }}

@@ -82,12 +82,14 @@ export default function Home() {
       />
     ),
     null:(
-      <div className="w-[80%] h-full border-text-color border-[1px] rounded-3xl px-4 py-5 space-y-3 justify-center items-center align-middle flex-1 flex">
-        <p className="icon-subtext text-center ">
+      <div className="w-[80%] h-full border-text-color border-[1px] rounded-3xl px-4 py-2 space-y-3 bg-bg-color relative">
+        <div className="flex flex-1 justify-center items-center align-middle h-full">
+        <p className="icon-subtext text-center">
           hover on the buttons
           <br />
           for preview
         </p>
+        </div>
       </div>
     )
   };
@@ -183,7 +185,7 @@ export default function Home() {
 
         {/* Preview Part */}
         <div
-          className="tablet:w-1/2 w-0 grid-margin-pr relative"
+          className="tablet:w-1/2 w-0 grid-margin-pr relative tablet:flex hidden"
           style={{
             height: projectButtonHeight,
           }}
