@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --bg-color: #041121;
+  --text-color: #F8FBFF;
+  --main-color: #0D56AA;
+  --secondary-color: #0076FF;
+  --accent-color: #FFC402;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  color :var(--text-color);
+  
+}
+
+/**
+ *
+ * CSS classes for all text that will be used on the website.
+ *
+**/
+.hero{
+  @apply font-montserrat font-black text-[40px] tablet:text-[64px] laptop:text-[96px] leading-[90%] tracking-[-3%];
+}
+
+.section-title{
+  @apply font-montserrat font-extrabold text-[32px] tablet:text-[48px] laptop:text-[64px] tracking-[-2%]
+}
+
+.secondary-title{
+  @apply font-montserrat font-semibold text-[20px] tablet:text-[24px] laptop:text-[32px] 
+}
+
+/* Copy of the .secondary-title */
+.project-navigation{
+  @apply font-montserrat font-semibold text-[20px] tablet:text-[24px] laptop:text-[32px]
+}
+
+/* Body text */
+p{
+  @apply font-switzer font-medium text-[16px] tablet:text-[16px] laptop:text-[20px]
+}
+
+.body{
+  @apply font-switzer font-medium text-[16px] tablet:text-[16px] laptop:text-[20px] 
+}
+
+.link-title{
+  @apply font-montserrat font-semibold text-[24px] tablet:text-[24px] laptop:text-[32px]
+}
+
+.link-description{
+  @apply font-switzer font-medium text-[14px] tablet:text-[16px] laptop:text-[20px]
+}
+
+.link-in-text{
+  @apply font-montserrat font-medium text-[20px] tablet:text-[20px] laptop:text-[24px]
+}
+
+.icon-subtext{
+  @apply font-switzer font-light text-[14px] tablet:text-[14px] laptop:text-[16px]
+}
+
+.tag-text{
+  @apply font-switzer font-light text-[14px] tablet:text-[14px] laptop:text-[16px]
+}
+
+/* 
+  Responsive margins and paddings based on the desing's grid system
+*/
+.grid-margin-mx{
+  @apply mx-margin-phone tablet:mx-margin-tablet laptop:mx-margin-laptop
+}
+
+.grid-margin-ml{
+  @apply ml-margin-phone tablet:ml-margin-tablet laptop:ml-margin-laptop
+}
+
+.gird-margin-mr{
+  @apply mr-margin-phone tablet:mr-margin-tablet laptop:mr-margin-laptop
+}
+
+.grid-margin-px{
+  @apply px-margin-phone tablet:px-margin-tablet laptop:px-margin-laptop
+}
+
+.grid-margin-pl{
+  @apply pl-margin-phone tablet:pl-margin-tablet laptop:pl-margin-laptop
+}
+
+.grid-margin-pr{
+  @apply pr-margin-phone tablet:pr-margin-tablet laptop:pr-margin-laptop
+}
+
+.grid-gutter-mx{
+  @apply mx-gutter-phone tablet:mx-gutter-tablet laptop:mx-gutter-laptop
+}
+
+.grid-gutter-ml{
+  @apply ml-gutter-phone tablet:ml-gutter-tablet laptop:ml-gutter-laptop
+}
+
+.gird-gutter-mr{
+  @apply mr-gutter-phone tablet:mr-gutter-tablet laptop:mr-gutter-laptop
+}
+
+.grid-gutter-px{
+  @apply px-gutter-phone tablet:px-gutter-tablet laptop:px-gutter-laptop
+}
+
+.grid-gutter-pl{
+  @apply pl-gutter-phone tablet:pl-gutter-tablet laptop:pl-gutter-laptop
+}
+
+.grid-gutter-pr{
+  @apply pr-gutter-phone tablet:pr-gutter-tablet laptop:pr-gutter-laptop
+}
+
+
+/* Responsive Spacing between sections on a page */
+.section-y-spacing{
+  @apply space-y-section-phone tablet:space-y-section-tablet laptop:space-y-section-laptop
+}
+
+/* Text effects */
+@layer base {
+  .font-outline-1 {
+    text-shadow: -1px 1px 0 var(--text-color),
+    1px 1px 0 var(--text-color),
+   1px -1px 0 var(--text-color),
+    -1px -1px 0 var(--text-color);
+  
+    color:var(--bg-color)
+  }
+
+  .font-outline-1::selection{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+  }
+}
+
+.hero::selection{
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+
+/* Navigation button effects */
+.button-block{
+  border-top: 1px solid var(--text-color);
+}
+
+.button-block>*{
+  border-bottom: 1px solid var(--text-color);
+}
+
+
+.hiddn{
+  visibility:none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
