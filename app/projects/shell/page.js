@@ -39,7 +39,7 @@ export default function Home() {
               supports all the commands that a regular bash or shell would, as
               well as provides support for redirections, multicommand lines of
               input. Also, the project adds a support for a custom redirection
-              command called ‘prepend redirection’. It allows appending the
+              command called &apos;prepend redirection&apos;. It allows appending the
               output to the start of the file.
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
               <h3 className="secondary-title">Custom Redirection</h3>
               <p>
                 The implementation supported a custom redirection of output
-                called prepending redirection ('&gt;+'). It allowed users to append
+                called prepending redirection (&apos;&gt;+&apos;). It allowed users to append
                 the output of a command to a start of a file rather than the end
                 of it. This allowed me to learn how to create and delete
                 temporary files with unique names to store data previously

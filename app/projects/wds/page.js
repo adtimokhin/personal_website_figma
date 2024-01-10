@@ -34,7 +34,7 @@ export default function Home() {
         <div className="w-full h-fit flex-1 lg:flex mx-auto space-y-4">
           <div className="desktop:w-1/2 w-full grid-margin-pl">
             <p>
-              A website designed for students in D’Overbroeck’s College Oxford
+              A website designed for students in D&apos;Overbroeck&apos;s College Oxford
               to schedule time when they will use communal washing machines and
               dryers in the residence halls of the school. The system allowed to
               select convenient time periods, create accounts. The system kept
