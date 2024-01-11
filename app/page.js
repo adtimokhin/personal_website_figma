@@ -196,9 +196,9 @@ export default function Home() {
 
       {/* Skills Section */}
       <section id="skills" className="w-full h-fit flex-1 lg:flex mx-auto">
-        <div className="lg:w-1/2 w-full pb-9 lg:pb-0 grid-margin-pr order-last">
+        <div className="lg:w-1/2 w-full pb-9 lg:pb-0 grid-margin-px order-last">
           <h2 className="section-title">My Skills</h2>
-          <p className="grid-gutter-pr">
+          <p className="grid-gutter-px">
             I am proficient in a range of programming languages, including C,
             Java, Python, and JavaScript. My expertise extends to full-stack web
             development and mobile applications, where I specialize in tools
@@ -210,7 +210,7 @@ export default function Home() {
             I undertake.
           </p>
         </div>
-        <div className="lg:w-1/2 w-full pb-9 lg:pb-0 space-y-10 grid-margin-pl order-first relative">
+        <div className="lg:w-1/2 w-full pb-9 lg:pb-0 space-y-10 grid-margin-px order-first relative">
           <IconRow
             icons={[PythonIcon, JavaIcon, JSIcon]}
             subtexts={["Python", "Java", "JS"]}
