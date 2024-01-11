@@ -48,14 +48,27 @@ const switzer = localFont({
   variable:"--switzer",
 })
 
-
-
 export const metadata = {
-  title: 'adtimokhin',
+  title: 'adtimokhin | Personal Website',
   description: 'CS student @ UChicago, a software developer bringing concepts to life.',
-
+  keywords: 'software development, web development, CS student, UChicago',
+  author: 'adtimokhin',
+  viewport: 'width=device-width, initial-scale=1.0',
+  // Add other important tags here
+  openGraph: {
+    title: 'adtimokhin | Personal Website',
+    description: 'CS student @ UChicago, a software developer bringing concepts to life.',
+    type: 'website',
+    url: 'https://www.adtimokhin.com',
+    image: 'https://www.adtimokhin.com/images/logo.png',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@adtimokhin',
+    creator: '@adtimokhin',
+  },
 }
-
+  
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
