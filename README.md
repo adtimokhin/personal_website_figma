@@ -1,3 +1,7 @@
+
+![opengraph-image](https://github.com/adtimokhin/personal_website_figma/assets/37998602/b969f786-c032-4120-860f-bf5e2cddc7cb)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
